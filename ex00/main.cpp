@@ -6,7 +6,7 @@
 /*   By: jadithya <jadithya@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 16:10:24 by jadithya          #+#    #+#             */
-/*   Updated: 2023/11/06 17:20:19 by jadithya         ###   ########.fr       */
+/*   Updated: 2023/11/11 20:47:20 by jadithya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ int main () {
 	std::cout << cat->getType() << " " << std::endl;
 	dog->makeSound(); //will output the cat sound!
 	cat->makeSound();
-
+	delete(dog);
+	delete(cat);
 
 	const WrongAnimal *a = new WrongAnimal();
 	const WrongAnimal *b = new WrongCat();
