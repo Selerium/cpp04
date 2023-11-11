@@ -6,7 +6,7 @@
 /*   By: jadithya <jadithya@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:34:43 by jadithya          #+#    #+#             */
-/*   Updated: 2023/11/06 18:50:00 by jadithya         ###   ########.fr       */
+/*   Updated: 2023/11/11 21:06:44 by jadithya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 Brain::Brain() {
 	this->ideas = new std::string[100];
+	for (int i = 0; i < 100; i++)
+		this->ideas[i] = "A random idea!";
 	std::cout << "Constructed a brain!" << std::endl;
 }
 
